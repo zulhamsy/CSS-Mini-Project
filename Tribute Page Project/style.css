@@ -78,6 +78,11 @@ section {
   padding: 0 0.2em;
 }
 
+/* Page 2 */
+#page-2 {
+  background: linear-gradient(30deg, rgba(255, 255, 255, 1) 15%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 90%);
+}
+
 /* Media Queries */
 @media(max-width: 500px) {
   #page-1 > .text-content {
@@ -100,6 +105,6 @@ section {
   }
   
   .lead {
-    font-size: 0.8em
+    font-size: 0.8em;
   }
 }
