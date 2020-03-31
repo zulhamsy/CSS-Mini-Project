@@ -94,3 +94,10 @@ body {
     --bg-light: var(--green-light);
   }
 }
+
+/* Media Queries */
+@media(max-width: 400px) {
+  #container > .card {
+    width: 60vw;
+  }
+}
