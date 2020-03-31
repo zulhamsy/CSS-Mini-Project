@@ -90,3 +90,10 @@ body {
 .red-card:hover .red {
   filter: invert(20%) sepia(46%) saturate(4598%) hue-rotate(351deg) brightness(96%) contrast(95%);
 }
+
+/* Media Queries */
+@media(max-height: 500px) {
+  .card {
+    height: 75vh;
+  }
+}
