@@ -99,24 +99,15 @@ section {
 }
 
 /* Media Queries */
-@media(max-width: 500px) {
-  #page-1 > .text-content {
-    max-width: 65vw;
+/* Portrait and Landscape */
+@media (max-width: 641px) {
+  #page-1>.text-content {
+    max-width: 60vw;
   }
   
   .l-heading {
     font-size: 2.5em;
     margin-bottom: 0.7em;
-  }
-  
-  .lead {
-    font-size: 0.8em;
-  }
-}
-
-@media(max-height: 300px) {
-  .l-heading {
-    font-size: 2.5em;
   }
   
   .lead {
