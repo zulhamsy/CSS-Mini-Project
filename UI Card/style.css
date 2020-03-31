@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  padding: 1.5em 2em;
+  margin-right: 0.6em;
+  border-radius: 10px;
+  height: 45vh;
+  position: relative;
+  background: #f5f5f5;
+  box-shadow: 5px 8px 15px -10px #333;
+}
+
+.card i {
+  font-size: 6em;
+}
+
+.card p {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  font-weight: 650;
+  letter-spacing: 0.2em;
+}
+
+
+/* Coloring */
+.green-card,
+.red-card {
+  transition: 0.5s;
+}
+
+.green-card:hover {
+  background: #7fe2a9;
+  transform: scale(1.04);
+  box-shadow: 5px 8px 15px -10px #333, 5px 8px 20px -8px #27ae60;
+}
+
+.green-card p {
+  color: #27ae60;
+}
+
+.green {
+  transition: 0.2s;
+  filter: invert(50%) sepia(88%) saturate(391%) hue-rotate(92deg) brightness(93%) contrast(87%);
+}
+
+.green-card:hover .green {
+  filter: invert(38%) sepia(21%) saturate(1320%) hue-rotate(92deg) brightness(100%) contrast(95%);
+}
+
+.red-card:hover {
+  background: #f4aaa2;
+  transform: scale(1.04);
+  box-shadow: 5px 8px 15px -10px #333, 5px 8px 20px -8px #f7c2bc;
+}
+
+.red-card p {
+  color: #ea6355;
+}
+
+.red {
+  transition: 0.2s;
+  filter: invert(62%) sepia(69%) saturate(2924%) hue-rotate(322deg) brightness(91%) contrast(102%);
+}
+
+.red-card:hover .red {
+  filter: invert(20%) sepia(46%) saturate(4598%) hue-rotate(351deg) brightness(96%) contrast(95%);
+}
