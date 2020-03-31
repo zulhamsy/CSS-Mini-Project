@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  background: #fff;
+}
+
+.container>.card {
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  width: 70vw;
+  background: radial-gradient(circle at left top, #2980b9 40%, #3498db 40%);
+  color: #fff;
+  box-shadow: 2px 0 10px 0 #3498db;
+}
+
+.container>.card>h1 {
+  margin-bottom: 0.6em;
+  font-size: 1.2em;
+}

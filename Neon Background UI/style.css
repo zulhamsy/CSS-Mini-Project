@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:800&display=swap');
+
+/*Variable*/
+:root {
+  --dark: #424242;
+  --light: #f6f6f6;
+
+  --green-dark: #16a085;
+  --green-light: #1abc9c;
+  --blue-dark: #2980b9;
+  --blue-light: #3498db;
+  --violet-dark: #8e44ad;
+  --violet-light: #9b59b6;
+  --orange-dark: #f39c12;
+  --orange-light: #f1c40f;
+}
+
+#container {
+  --root-bg: var(--dark);
+}
+
+.card {
+  --bg-dark: var(--green-dark);
+  --bg-light: var(--green-light);
+}
+
+/*CSS*/
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans';
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: var(--root-bg);
+}
+
+#container>.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  height: 65vh;
+  padding: 0.5em;
+  background: radial-gradient(circle at top right, var(--bg-light) 55%, var(--bg-dark) 55%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px var(--bg-light), 0px 0px 30px var(--bg-light), 0px 0px 60px var(--bg-light), 0px 0px 120px var(--bg-light);
+  animation: change-color 6s ease-in-out infinite;
+}
+
+.card h1 {
+  font-size: 2.7em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card h1>span {
+  color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 5px;
+}
+
+/*Animation*/
+@keyframes change-color {
+  25% {
+    --bg-dark: var(--blue-dark);
+    --bg-light: var(--blue-light);
+  }
+
+  50% {
+    --bg-dark: var(--violet-dark);
+    --bg-light: var(--violet-light);
+  }
+
+  75% {
+    --bg-dark: var(--orange-dark);
+    --bg-light: var(--orange-light);
+  }
+
+  100% {
+    --bg-dark: var(--green-dark);
+    --bg-light: var(--green-light);
+  }
+}
