@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400,400i&display=swap');
+
 /* CSS Reset */
 *, *:before, *:after {
     margin: 0;
@@ -25,6 +26,27 @@ section {
     font-size: 1.5em;
 }
 
+.btn {
+  display: inline-block;
+  /*width: 150px;*/
+  border: 2px solid #ddd;
+  padding: 0.5em 1.2em;
+ text-decoration: none;
+ border-radius: 4px;
+}
+
+.btn-primary {
+  background: #000;
+  color: #fff;
+  transition: 0.2s;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  color: #000;
+}
+
 
 /* Page 1 */
 #page-1 {
@@ -32,15 +54,13 @@ section {
     color: #fff;
 }
 
-#page-1 > * {
-    max-width: 50vw;
-    text-align: center;
-}
-
 #page-1 > .text-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    text-align: center;
     height: 100%;
     padding: 0.6em;
 }
@@ -49,6 +69,7 @@ section {
     font-family: 'Cardo';
     font-style: italic;
     text-transform: capitalize;
+    margin-bottom: 2.7em;
 }
 
 #page-1 h2.lead > span {
@@ -59,12 +80,12 @@ section {
 
 /* Media Queries */
 @media(max-width: 500px) {
-  #page-1 > * {
+  #page-1 > .text-content {
     max-width: 65vw;
   }
   
   .l-heading {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   
   .lead {
