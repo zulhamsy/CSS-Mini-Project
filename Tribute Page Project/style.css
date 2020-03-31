@@ -81,6 +81,21 @@ section {
 /* Page 2 */
 #page-2 {
   background: linear-gradient(30deg, rgba(255, 255, 255, 1) 15%, rgba(0, 0, 0, 1) 15%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 90%);
+  color: #fff;
+}
+
+#page-2 > .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+#page-2 > .container > img {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Media Queries */
