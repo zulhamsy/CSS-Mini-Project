@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i&display=swap');
+/* CSS Reset */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Set */
+body {
+    font-family: 'Cinzel', serif;
+    overflow: hidden;
+}
+section {
+    height: 100vh;
+}
+
+/* Utility Classes */
+.l-heading {
+    font-size: 5em;
+}
+
+.lead {
+    font-size: 1.5em;
+}
+
+
+/* Page 1 */
+#page-1 {
+    background: url(./img/background-page-1.jpg) no-repeat center center/cover;
+    color: #fff;
+}
+
+#page-1 > * {
+    max-width: 50vw;
+    text-align: center;
+}
+
+#page-1 > .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0.6em;
+}
+
+#page-1 h2.lead {
+    font-family: 'Cardo';
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+#page-1 h2.lead > span {
+    background: #fff;
+    color: #000;
+    padding: 0 0.2em;
+}
