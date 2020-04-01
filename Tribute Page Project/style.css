@@ -49,6 +49,7 @@ section {
   padding: 0.5em 1.2em;
   text-decoration: none;
   border-radius: 4px;
+  outline: none;
 }
 
 .btn-small {
@@ -59,12 +60,16 @@ section {
   background: #000;
   color: #fff;
   transition: 0.2s;
-  outline: none;
 }
 
 .btn-primary:hover {
   background: #fff;
   color: #000;
+}
+
+.btn-secondary {
+  border: none;
+  color: #fff;
 }
 
 /* Page 1 */
