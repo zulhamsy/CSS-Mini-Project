@@ -18,15 +18,29 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 100px;
   grid-gap: 3px;
+  grid-auto-flow: dense;
 }
 
 .grid-container > div {
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 750;
+}
+
+.landscape {
+  grid-column: span 2;
+}
+
+.potrait {
+  grid-row: span 2;
+}
+
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .grid-container > div:nth-child(6n) {
