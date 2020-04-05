@@ -135,6 +135,37 @@ section {
 #page-3 {
   background: linear-gradient(30deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 90%);
   color: #fff;
+  position: relative;
+}
+
+#page-3 > #img-div {
+  position: absolute;
+  width: 12rem;
+  right: 0;
+  bottom: 0;
+}
+
+#page-3 > #img-div > #image {
+  width: 100%;
+  height: auto;
+  max-width: 10rem;
+  margin: 0 auto;
+  display: block;
+}
+
+#img-div > #img-caption {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+#page-3 > .text-content {
+  font-family: 'Cardo';
+  width: 65%;
+  padding: 0.5rem;
+}
+
+#page-3 > .text-content > p {
+  margin-bottom: 0.8rem;
 }
 
 /* Media Queries */
