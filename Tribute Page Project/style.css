@@ -162,10 +162,16 @@ section {
   font-family: 'Cardo';
   width: 65%;
   padding: 0.5rem;
+  position: relative;
+}
+
+#page-3 > .text-content > #tribute-link {
+  position: absolute;
+  right: 0;
 }
 
 #page-3 > .text-content > p {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 /* Media Queries */
