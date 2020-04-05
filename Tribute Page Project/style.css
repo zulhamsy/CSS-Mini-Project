@@ -131,6 +131,12 @@ section {
   text-align: left;
 }
 
+/* Page 3 */
+#page-3 {
+  background: linear-gradient(30deg, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 90%);
+  color: #fff;
+}
+
 /* Media Queries */
 /* Portrait and Landscape */
 /*@media (max-width: 641px) {
