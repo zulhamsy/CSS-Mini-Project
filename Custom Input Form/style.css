@@ -14,12 +14,9 @@ body {
   height: 60vh;
 }
 
-.form {
-  height: 50px;
-}
-
 .form > .form-element {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .form > .form-element > input {
