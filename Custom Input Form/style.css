@@ -33,7 +33,7 @@ body {
   bottom: 0;
   left: 0;
   border-bottom: 2px solid blue;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
 }
 
 .form > .form-element > .form-label > .label-content{
@@ -41,7 +41,7 @@ body {
   top: 0;
   font-size: 0.9rem;
   color: #333;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
 }
 
 /*Animation*/
