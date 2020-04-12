@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #333;
+  color: #ddd;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  clip-path: circle(5% at 11% 17%);
+  transition: 1s ease-in;
+}
+
+.container:hover {
+  clip-path: circle(126.1% at 10% 10%);
+}
