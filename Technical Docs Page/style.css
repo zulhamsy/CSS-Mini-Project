@@ -11,9 +11,8 @@ body {
   font-size: 15px;
 }
 
-p {
+p, li {
   line-height: 1.5em;
-  /*margin-bottom: 1em;*/
   text-align: justify;
 }
 
@@ -32,7 +31,6 @@ pre, code {
   color: #fff;
   padding: 0.2em 0.1em;
   letter-spacing: 0.1em;
-  /*margin-bottom: 0.7em;*/
 }
 
 .sec-title {
@@ -54,6 +52,10 @@ pre, code {
   grid-auto-rows: auto;
   grid-row-gap: 1em;
   grid-column: 1 / -1;
+}
+
+.main-section > .ol-list {
+  padding-left: 1em;
 }
 
 .main-section > * {
